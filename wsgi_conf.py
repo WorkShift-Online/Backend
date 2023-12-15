@@ -7,5 +7,5 @@ workers = cpu_count() + 1
 worker_class = 'uvicorn.workers.UvicornWorker'
 
 loglevel = 'debug'
-accesslog = '/home/automator/workshift/Logs/access_log.txt'
-errorlog = '/home/automator/workshift/Logs/error_log.txt'
+accesslog = '/root/Logs/access_log.txt'
+errorlog = '/root/Logs/error_log.txt'
