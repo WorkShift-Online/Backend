@@ -6,20 +6,6 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return HTMLResponse(
-        """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Фоновое изображение</title>
-  <style type="text/css">
-   BODY {
-    background: url(http://cdd.mxustin.ru/f/f7e7afe2f2af4ca7a164/?dl=1) no-repeat 30px 20px; /* Параметры фона */
-   }
-  </style>
- </head>
- <body>
-  <p>...</p>
- </body>
-</html>"""
-    )
+    with open('coming_soon.html') as src:
+        data = src.read()
+    return HTMLResponse(content=data, media_type='text/html')
