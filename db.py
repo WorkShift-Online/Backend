@@ -12,10 +12,10 @@ secret = load(
 
 settings = dict(
     provider='postgres',
-    user=secret['user'],
-    password=secret['password'],
-    host=secret['host'],
-    database=secret['database']
+    user=secret['dbUser'],
+    password=secret['dbPassword'],
+    host=secret['dbHost'],
+    database=secret['dbDatabase']
 )
 
 db = orm.Database(**settings)
