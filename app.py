@@ -14,7 +14,7 @@ def root():
   <title>Фоновое изображение</title>
   <style type="text/css">
    BODY {
-    background: url(images/target.gif) no-repeat 30px 20px; /* Параметры фона */
+    background: url(http://cdd.mxustin.ru/f/f7e7afe2f2af4ca7a164/?dl=1) no-repeat 30px 20px; /* Параметры фона */
    }
   </style>
  </head>
