@@ -5,6 +5,6 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return ('👋 Привет! Это — публичный API проекта 🕗 WorkShift Backend. '
+    return ('👋 Привет! Это — публичный API 🕗 WorkShift Backend. '
             '📚 Документация доступна здесь: '
             'https://api.workshift.online/docs')
